@@ -8,3 +8,5 @@ gem 'coveralls', require: false
 gem 'slather', '~> 1.8'
 gem 'xcpretty'
 gem 'nokogiri', '~> 1.6'
+
+gem 'erubis', '~> 2.7.0'
