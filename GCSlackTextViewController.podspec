@@ -1,7 +1,7 @@
 @version = "1.9.6-gc.0"
 
 Pod::Spec.new do |s|
-  s.name         		= "SlackTextViewController"
+  s.name         		= "GCSlackTextViewController"
   s.version      		= @version
   s.summary      		= "A drop-in UIViewController subclass with a custom growing text input and other useful messaging features."
   s.description   = "Meant to be a replacement for UITableViewController & UICollectionViewController. This library is used in Slack's iOS app. It was built to fit our needs, but is flexible enough to be reused by others wanting to build great messaging apps for iOS."
