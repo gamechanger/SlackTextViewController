@@ -4,7 +4,7 @@
 ## The Definitions
 ##
 
-podspecFile=../SlackTextViewController.podspec
+podspecFile=../GCSlackTextViewController.podspec
 newVersionNumber="0.0.0"
 scriptDirectory=`dirname "$0"`
 gitTag="0.0.0"
