@@ -48,11 +48,11 @@ preflight_checks() {
 
     newVersionNumber=$1
 
-    #
-    # Check that the argument is a properly formatted version number (x.y.z)
-    if [[ ! $newVersionNumber =~ ^[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+$ ]]; then
-        preflight_fail "Argument is not a valid version number (x.y.z)"
-    fi
+    # #
+    # # Check that the argument is a properly formatted version number (x.y.z)
+    # if [[ ! $newVersionNumber =~ ^[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+$ ]]; then
+    #     preflight_fail "Argument is not a valid version number (x.y.z)"
+    # fi
 
     #
     # Make sure the current branch is set to master
