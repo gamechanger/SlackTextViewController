@@ -43,10 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong) SLKInputAccessoryView *inputAccessoryView;
 
 /** The left action button action. */
-@property (nonatomic, strong) UIButton *leftButton;
+@property (nonatomic, strong) UIButton *leadingLeftButton;
 
 /** The second left action button action. */
-@property (nonatomic, strong) UIButton *leftButton2;
+@property (nonatomic, strong) UIButton *trailingLeftButton;
 
 /** The right action button action. */
 @property (nonatomic, strong) UIButton *rightButton;
