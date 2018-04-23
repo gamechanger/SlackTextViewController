@@ -119,8 +119,8 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
 
 /** Convenience accessors (accessed through the text input bar) */
 @property (nonatomic, readonly) SLKTextView *textView;
-@property (nonatomic, readonly) UIButton *leadingLeftButton;
-@property (nonatomic, readonly) UIButton *trailingLeftButton;
+@property (nonatomic, readonly) UIButton *leftButton;
+@property (nonatomic, readonly) UIButton *leftButton2;
 @property (nonatomic, readonly) UIButton *rightButton;
 
 
@@ -272,7 +272,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
  
  @param sender The object calling this method.
  */
-- (void)didPressLeadingLeftButton:(id _Nullable)sender;
+- (void)didPressLeftButton:(id _Nullable)sender;
 
 /**
  Notifies the view controller when the second left button's action has been triggered, manually.
@@ -281,7 +281,7 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
 
  @param sender The object calling this method.
  */
-- (void)didPressTrailingLeftButton:(id _Nullable)sender;
+- (void)didPressLeftButton2:(id _Nullable)sender;
 
 /**
  Notifies the view controller when the right button's action has been triggered, manually or by using the keyboard return key.
