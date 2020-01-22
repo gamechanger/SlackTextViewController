@@ -505,9 +505,14 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
 - (void)setFont:(UIFont *)font
 {
     NSString *contentSizeCategory = [[UIApplication sharedApplication] preferredContentSizeCategory];
-    
-    [self setFontName:font.fontName pointSize:font.pointSize withContentSizeCategory:contentSizeCategory];
-    
+
+    if ([self isSystemFont:font]) {
+        [super setFont:[UIFont systemFontOfSize:font.pointSize]];
+        self.placeholderLabel.font = self.font;
+    } else {
+        [self setFontName:font.fontName pointSize:font.pointSize withContentSizeCategory:contentSizeCategory];
+    }
+
     self.initialFontSize = font.pointSize;
 }
 
@@ -544,6 +549,11 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
     
     // Updates the placeholder text alignment too
     self.placeholderLabel.textAlignment = textAlignment;
+}
+
+-(BOOL)isSystemFont:(UIFont *)font
+{
+    return ([[font familyName] isEqualToString:[[UIFont systemFontOfSize:12.0f] familyName]])?YES:NO;
 }
 
 
