@@ -551,7 +551,7 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
     self.placeholderLabel.textAlignment = textAlignment;
 }
 
--(bool)isSystemFont:(UIFont *)font
+-(BOOL)isSystemFont:(UIFont *)font
 {
     return ([[font familyName] isEqualToString:[[UIFont systemFontOfSize:12.0f] familyName]])?YES:NO;
 }
